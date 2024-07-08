@@ -1,8 +1,8 @@
-######**TrustTribe**
+#TrustTribe
 ****
 Welcome to the TrustTribe! This is a community engagement project aims to provide a comprehensive platform for community interactions, incident reporting, event management, and more.
 
-###**Features** <br>
+###Features <br>
 ****
 *Live Chat: Real-time communication for community members.<br>
 *Report Incidenting: Easy and quick way to report incidents within the community.<br>
@@ -12,7 +12,7 @@ Welcome to the TrustTribe! This is a community engagement project aims to provid
 <br>
 <br>
 <br>
-###**Usage**
+###Usage
 ****
 ***Live Chat**: Navigate to the chat section to start real-time conversations with other community members.
 ***Report Incident**: Use the incident reporting form to submit any incidents or issues within the community.
