@@ -18,7 +18,7 @@ const nodemailer = require('nodemailer');
 const sharedSession = require('express-socket.io-session');
 /* dealing the sessions */
 const expressSession = session({
-  secret: 'your-secret-key',
+  secret: process.env.SECRETKEY,
   resave: false,
   saveUninitialized: false,
   cookie: {maxAge:12000000}
