@@ -1,0 +1,40 @@
+<%- include("partials/header") -%>
+<title>Sign_in</title>
+<link rel="stylesheet" href="styles/styles.css" />
+<link rel="stylesheet" href="styles/draftstyle.css">
+</head>
+<body>
+    
+    <div class="cont">
+        <div class="form-box">
+            <h1 id="title" style="font-weight: bolder;"> Sign In</h1>
+            
+            <form id="signupForm" action="/signin" method="post" >
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-2x fa-user"></i>
+                        <input type="text" name="hisuseremaili" id="nameField" style="font-size: 1.3rem;" placeholder="Name" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-2x fa-phone"></i>
+                        <input type="text" name="hismobile" id="mobileField" style="font-size: 1.3rem;" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-2x fa-envelope"></i>
+                        <input type="email" name="useremaili" id="signupEmailField" style="font-size: 1.3rem;" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-2x fa-lock"></i>
+                        <input type="password" name="userpasswordi" id="signupPasswordField" style="font-size: 1.3rem;" placeholder="Password" required>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" style="font-size: 1.2rem;">Sign In</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

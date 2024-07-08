@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+.containerphoto{
+    text-align: center;
+    background: #f5f5f5;
+
+}
+.headername{
+    padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+.sb-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.teams{
+    margin: 10px;
+    padding: 22px;
+    max-width: 22%;
+    cursor: pointer;
+    transition: 0,4s;
+    box-sizing: border-box;
+}
+.teams:hover{
+    background: #ddd;
+    border-radius: 12px ;
+}
+.teams img{
+    width: 150px;
+    height: 200px;
+    border-radius: 50px;
+}
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.desig{
+    font-style: italic;
+    color: #888;
+}
+.about{
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+.social-links{
+    margin: 14px;
+}
+.social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+
+}
+.social-links a:hover{
+    transform: scale(1.5);
+}
+.social-links a i{
+    color: #444;
+}
+
+@media screen and (max-width:600px){
+    .teams{
+        max-width: 100%;
+    }
+}
+
+.container2 .heading{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.container2 .heading h1{
+    color: #f15b43;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.wrapper{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentinfo{
+    width: 50%;
+    margin: 0px 25px;
+}
+.contentinfo h2{
+    font-size: 30px;
+    color: #284966;
+
+}
+.contentinfo p{
+    color: #666;
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.contentinfo .btn{
+    position: relative;
+    margin-top: 30px;
+    text-decoration: none;
+    border: 2px solid #f15b43;
+    font-size: 19px;
+    color: #f15b43;
+    padding: 13px 16px;
+    display:inline-block;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.image{
+    width: 50%;
+    transition: 0.4s ease;
+
+}
+.image:hover{
+    transform: translateY(-10px);
+}
+.image img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:768px){
+    .wrapper{
+        flex-direction: column;
+        margin-top:0px ;
+    }
+    .container2 .heading h1{
+        
+        font-size: 40px;
+        
+    }
+    .contentinfo , .image{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .contentinfo h2{
+        font-size: 25px;
+    }
+    .contentinfo .btn{
+        font-size: 16px;
+        padding: 12px 14px;
+    }
+}
+
+
+
+
+
+
+
+
+

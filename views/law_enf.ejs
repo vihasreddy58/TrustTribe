@@ -1,0 +1,57 @@
+<%- include("partials/header") -%>
+<link rel="stylesheet" href="styles/styles.css" />
+<style>
+    .container-fluid{
+        font-size: 1.5rem;
+    }
+    .col{
+        margin: 2rem;
+    }
+</style>
+<title>Report Incident</title>
+</head>
+<body>
+  <%- include("partials/navbar") -%>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-12">
+            <div class="law-fomr" style="margin: 2rem;">
+
+                <form action="/complainpost" method="POST">
+                    <div class="col">
+                        <label for="lawop">Complain: </label><br>
+                        <select class="form-select" name="complain" aria-label="Default select example" required>
+                            <option selected>Select Complain</option>
+                            <option value="Municipality">Municipality</option>
+                            <option value="Police">Police</option>
+                            <option value="Plumber">Plumber</option>
+                            <option value="Electrician">Electrician</option>
+                            <option value="Sanitation">Sanitation</option>
+                            <option value="Internet Provider">Internet Provider</option>
+                          </select>
+                    </div>
+                    <div class="col">
+                        <label for="anum">Apartment Number:</label>
+                        <input type="text" name="anum" id="anum" class="form-control" required>
+                    </div>
+                    <div class="col">
+                        <label for="subject">subject:</label>
+                        <input type="text" name="subject" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-floating col">
+                        <label for="info">Body:</label>
+                        <textarea class="form-control" name="info" rows="5" id="info" required></textarea>
+                      </div>
+                      <div class="col" style="width: 15rem; margin: 2rem">
+                        <button class="btn btn-primary col" type="submit" >Submit</button>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <%- include("partials/footer") -%>
+</body>
+</html>

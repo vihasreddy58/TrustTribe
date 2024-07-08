@@ -1,0 +1,59 @@
+<%- include("partials/header") -%>
+<title>Login</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/draftstyle.css">
+</head>
+<body>
+  
+    <div class="cont">
+        <div class="form-box">
+            <h1 id="title" style="font-weight: bolder;">Log In</h1>
+            <form id="loginForm" action="/login" method="post">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-2x fa-envelope"></i>
+                        <input type="email" name="useremail" id="emailField" style="font-size: 1.3rem;" placeholder="Email" required>
+                    </div>
+                    
+                    <div class="input-field">
+                        <i class="fa-solid fa-2x fa-lock"></i>
+                        <input type="password" name="userpassword" id="passwordField" style="font-size: 1.3rem;" placeholder="Password" required>
+                    </div>
+                    <div class="hidtex2" style="color: red;">
+                        <p><%= texthi %></p>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" style="font-size: 1.2rem;">Log In</button>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <p>If not registered, <strong><a href="/signin" id="signupLink">sign In</a></strong>.</p>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+   
+<!--     <script>
+        let signupLink = document.getElementById("signupLink");
+        let signinLink = document.getElementById("signinLink");
+        let title = document.getElementById("title");
+        let loginForm = document.getElementById("loginForm");
+        let signupForm = document.getElementById("signupForm");
+
+        signupLink.onclick = function() {
+            title.innerHTML = "Sign Up";
+            loginForm.style.display = "none";
+            signupForm.style.display = "block";
+            return false; // Prevent default link behavior
+        }
+
+        signinLink.onclick = function() {
+            title.innerHTML = "Sign In";
+            signupForm.style.display = "none";
+            loginForm.style.display = "block";
+            return false; // Prevent default link behavior
+        }
+    </script> -->
+</body>
+</html>

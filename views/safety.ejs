@@ -1,0 +1,131 @@
+<%- include("partials/header") -%>
+<title>Safety Measures</title>
+<link rel="stylesheet" href="styles/styles.css" />
+<link rel="stylesheet" href="styles/safetycss.css">
+</head>
+
+<body>
+
+  <%- include("partials/navbar") -%>
+<div class="panels">
+  <div class="left-panel">
+    <ul class="topics">
+      <li><a href="#" onclick="toggleOption('option1')">Fire Hazards</a></li>
+      <li><a href="#" onclick="toggleOption('option2')">Suspicious Activity</a></li>
+      <li><a href="#" onclick="toggleOption('option3')">Violent Behavior</a></li>
+      <li><a href="#" onclick="toggleOption('option4')">Theft</a></li>
+      <li><a href="#" onclick="toggleOption('option5')">Medical Emergency</a></li>
+      <li><a href="#" onclick="toggleOption('option6')">Natural Disasters</a></li>
+    </ul>
+  </div>
+
+  <div class="right-panel">
+    <div id="infoContainer">
+      <p>Implementing robust safety measures is crucial for fostering a secure and thriving community. These measures help prevent accidents, reduce the risk of injuries, and protect residents from various hazards, ranging from natural disasters to everyday incidents. By promoting awareness and preparedness, safety measures empower community members to respond effectively in emergencies, ensuring swift and coordinated actions that can save lives and minimize damage. Moreover, a community that prioritizes safety fosters a sense of trust and solidarity among its residents, enhancing overall well-being and quality of life. Through collective efforts in maintaining and improving safety protocols, communities can create a resilient environment where everyone feels protected and supported.</p>
+    </div>
+  </div>
+</div>
+<%- include("partials/footer") -%>
+</body>
+
+<script>
+  var optionContent = {
+    option1: `
+      <h1>Fire Hazards</h1>
+      <p>Fire hazards encompass the risk of fires breaking out in residential or public spaces, leading to property damage, injuries, or loss of life. Fires can occur due to various factors, including electrical faults, cooking accidents, heating appliances, smoking materials, or arson. They can spread rapidly and pose significant risks to occupants and neighboring properties, especially in densely populated areas.</p>
+      <ul>
+        <li><strong>Install Smoke Detectors:</strong> Ensure that smoke detectors are installed on every level of the building and within each sleeping area. Test smoke alarms regularly and replace batteries as needed.</li>
+        <li><strong>Fire Extinguishers:</strong> Place fire extinguishers in key locations throughout the building, such as the kitchen, garage, and near exits.</li>
+        <li><strong>Develop Evacuation Plans:</strong> Create detailed evacuation plans that outline escape routes, meeting points, and procedures for evacuating residents in the event of a fire.</li>
+        <li><strong>Electrical Safety:</strong> Inspect electrical wiring, outlets, and appliances regularly for signs of wear or damage. Avoid overloading electrical circuits and use surge protectors for additional safety.</li>
+        <li><strong>Cooking Safety:</strong> Practice safe cooking habits, such as never leaving cooking appliances unattended, keeping flammable materials away from heat sources, and using pot handles turned inward to prevent spills and accidents.</li>
+      </ul>
+      <h3>Articles:</h3>
+      <p><a href="https://humanfocus.co.uk/blog/10-fire-safety-tips-for-the-home-and-workplace/">"10 Fire Safety Tips to Keep Your Home and Family Safe" </a>- This article outlines practical tips for fire safety at home, including the importance of smoke alarms, creating an escape plan, and proper use of fire extinguishers.</p>
+      <p><a href="https://kanexfire.com/blog/fire-safety-in-high-rise-buildings-challenges-and-strategies/"> "Fire Safety in High-Rise Buildings: Challenges and Solutions"</a> - High-rise buildings present unique challenges for fire safety. This article discusses measures such as fire-resistant construction materials, sprinkler systems, and evacuation procedures tailored to high-rise structures.</p>
+    `,
+    option2: `
+      <h1>Suspicious Activity</h1>
+      <p>Suspicious activity in the community encompasses any behavior, action, or situation that appears out of the ordinary, raises concerns, or elicits a sense of unease among residents.</p>
+      <ul>
+        <li><strong>Stay Vigilant:</strong> Encourage residents to remain vigilant and attentive to their surroundings, noting any unusual or suspicious behavior they observe.</li>
+        <li><strong>Trust Your Instincts:</strong> Advise residents to trust their instincts and report any behavior or activity that feels out of place, even if it seems minor or insignificant.</li>
+        <li><strong>Know Your Neighbors:</strong> Foster a sense of community and encourage neighbors to look out for one another. Establishing strong relationships with neighbors can facilitate communication and collaboration in identifying and addressing suspicious activity.</li>
+        <li><strong>Report Promptly:</strong> Emphasize the importance of reporting suspicious activity promptly to local law enforcement authorities. Provide residents with contact information for reporting non-emergency concerns and encourage them to call emergency services immediately if they witness a crime in progress or feel threatened.</li>
+        <li><strong>Document Details:</strong> Encourage residents to take note of specific details about suspicious activity, including descriptions of individuals or vehicles involved, timestamps, and any relevant circumstances or observations.</li>
+        <li><strong>Coordinate with Authorities:</strong> Promote cooperation and collaboration with law enforcement agencies in addressing suspicious activity. Establish communication channels or reporting mechanisms to facilitate information sharing and response coordination.</li>
+      </ul>
+    `,
+    option3: `
+      <h1>Violent Behavior</h1>
+      <p>Violent behavior encompasses a broad spectrum of actions and conduct that are intended to cause harm, injury, or damage to individuals, property, or communities. This behavior can manifest in various forms and contexts, ranging from interpersonal conflicts to organized acts of aggression.</p>
+      <ul>
+        <li><strong>Education and Awareness:</strong> Promote education and awareness programs to educate individuals about the consequences of violent behavior and the importance of peaceful conflict resolution strategies.</li>
+        <li><strong>Early Intervention:</strong> Implement early intervention programs to identify and address risk factors for violent behavior, such as childhood trauma, substance abuse, or mental health issues, before they escalate.</li>
+        <li><strong>Community Support Services:</strong> Provide access to community support services such as counseling, therapy, and social services for individuals and families affected by violence. Offer resources for victims to seek help and support in navigating safety and recovery.</li>
+        <li><strong>Law Enforcement and Legal Measures:</strong> Strengthen law enforcement efforts to prevent and address violent behavior through proactive policing, investigation, and prosecution of offenders. Enforce laws and regulations aimed at reducing access to weapons and restricting the availability of firearms to individuals at risk of committing violent acts.</li>
+        <li><strong>Conflict Resolution and Mediation:</strong> Promote conflict resolution and mediation programs to resolve disputes peacefully and constructively. Train individuals in communication skills, negotiation techniques, and de-escalation strategies to manage conflicts effectively and prevent violence.</li>
+        <li><strong>Community Engagement and Empowerment:</strong> Foster community engagement and empowerment initiatives to build social cohesion, resilience, and a sense of belonging among residents. Encourage community members to take an active role in promoting non-violent behavior and creating safe, supportive environments for all.</li>
+      </ul>
+    `,
+    option4: `
+      <h1>Theft</h1>
+      <p>Theft refers to the unlawful act of taking someone else's property without permission, with the intent to permanently deprive the owner of their possession. It encompasses a range of crimes, including burglary, robbery, shoplifting, and theft of personal belongings.</p>
+      <ul>
+        <li>Keep doors and windows locked when not at home and install sturdy locks.</li>
+        <li>Use security systems such as alarms, surveillance cameras, and motion sensors to deter thieves.</li>
+        <li>Avoid leaving valuables or personal belongings unattended in public places.</li>
+        <li>Be cautious when sharing personal information online and avoid posting about expensive purchases or travel plans.</li>
+        <li>Keep records of valuable items, including serial numbers and photographs, to aid in recovery in case of theft.</li>
+        <li>Join or establish a neighborhood watch program to increase vigilance and community cooperation in preventing theft.</li>
+      </ul>
+      <h2>Related Links</h2>
+      <ul>
+        <li><a href="https://www.ncpc.org/topics/preventing-crime/personal-safety/theft/">Theft Prevention Tips - National Crime Prevention Council</a></li>
+        <li><a href="https://www.fbi.gov/scams-and-safety/common-scams-and-crimes/theft-and-robbery">Theft and Robbery - FBI</a></li>
+        <li><a href="https://www.consumer.ftc.gov/articles/0171-preventing-and-responding-identity-theft">Preventing Identity Theft - Federal Trade Commission</a></li>
+      </ul>
+    `,
+    option5: `
+      <h1>Medical Emergencies</h1>
+      <p>A medical emergency is a sudden, unexpected, and potentially life-threatening situation that requires immediate medical attention. It encompasses a wide range of conditions, including severe injuries, heart attacks, strokes, allergic reactions, and respiratory distress.</p>
+      <ul>
+        <li><strong>Recognize the signs:</strong> Learn to identify symptoms of medical emergencies, such as chest pain, difficulty breathing, severe bleeding, sudden weakness, or confusion.</li>
+        <li><strong>Stay calm:</strong> In a medical emergency, remain calm and composed. Panicking can hinder effective response and delay necessary actions.</li>
+        <li><strong>Call for help:</strong> Dial emergency services (e.g., 911) immediately. Provide clear and concise information about the situation, including the location, nature of the emergency, and any relevant details.</li>
+        <li><strong>Provide first aid:</strong> Administer first aid if trained and able. Follow established protocols for CPR, wound care, or other relevant procedures until professional help arrives.</li>
+        <li><strong>Use emergency equipment:</strong> Familiarize yourself with the location and proper use of emergency equipment, such as automated external defibrillators (AEDs) and first aid kits.</li>
+        <li><strong>Follow medical instructions:</strong> Listen to and follow instructions from emergency dispatchers, paramedics, or healthcare professionals to ensure appropriate care and assistance.</li>
+      </ul>
+    `,
+    option6: `
+      <h1>Natural Disasters</h1>
+      <p>Natural disasters are catastrophic events caused by natural processes of the Earth, resulting in significant damage, loss of life, and disruption to communities. Examples include earthquakes, hurricanes, floods, wildfires, and tornadoes.</p>
+      <ul>
+        <li>Prepare an emergency kit with essential supplies, including food, water, medications, and important documents.</li>
+        <li>Develop a family emergency plan, including evacuation routes and meeting points.</li>
+        <li>Stay informed about potential natural disasters through local news, weather alerts, and emergency notifications.</li>
+        <li>Secure your home by reinforcing structures, trimming trees, and clearing debris that could pose hazards during a disaster.</li>
+        <li>Follow evacuation orders and safety instructions issued by authorities during natural disasters.</li>
+        <li>Consider obtaining insurance coverage for natural disasters to mitigate financial losses.</li>
+      </ul>
+      <h2>Related Links</h2>
+      <ul>
+        <li><a href="https://www.ready.gov/natural-disasters">Natural Disasters - Ready.gov</a></li>
+        <li><a href="https://www.cdc.gov/disasters/index.html">Natural Disasters and Severe Weather - CDC</a></li>
+        <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/natural-disaster.html">Natural Disaster Preparedness - American Red Cross</a></li>
+      </ul>
+    `,
+  };
+
+  function toggleOption(option) {
+    var infoContainer = document.getElementById('infoContainer');
+    if (infoContainer.innerHTML === optionContent[option]) {
+      infoContainer.innerHTML = `<p>Implementing robust safety measures is crucial for fostering a secure and thriving community. These measures help prevent accidents, reduce the risk of injuries, and protect residents from various hazards, ranging from natural disasters to everyday incidents. By promoting awareness and preparedness, safety measures empower community members to respond effectively in emergencies, ensuring swift and coordinated actions that can save lives and minimize damage. Moreover, a community that prioritizes safety fosters a sense of trust and solidarity among its residents, enhancing overall well-being and quality of life. Through collective efforts in maintaining and improving safety protocols, communities can create a resilient environment where everyone feels protected and supported.</p>`;
+    } else {
+      infoContainer.innerHTML = optionContent[option];
+    }
+  }
+</script>
+
+</html>

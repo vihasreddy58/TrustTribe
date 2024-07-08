@@ -1,0 +1,316 @@
+/* .navg{
+    margin-right: -21rem;
+} */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-bg: #000000;
+    --main-color: #FFD700;
+}
+ul {
+    list-style-type: none;
+}
+
+/* body{
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+html{
+    font-size: 62.5%;
+}
+p{
+    font-size: 1.4rem;
+}
+.row{
+    margin: 0;
+
+}
+.main_menu{
+    background-color: var(--main-bg);
+
+}
+.navbar{
+    color: aliceblue;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.nav_logo{
+    font-family: "Julius Sans One";
+    font-weight: bolder;
+    color: #FFD700;
+    font-size: 2.4rem;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#FFD700' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-toggler {
+    border: 1px solid #FFD700;
+} 
+
+/* group chat */
+.chat_cards li{
+ margin: 2rem 0 2rem 0;
+ 
+}
+.carousel-item img{
+  border-radius: 5rem;
+}
+.card{
+    border-radius: 10px;
+}
+
+.card img{
+  height: 20rem;
+  width: 100%;
+  object-fit: contain;
+  padding: 2rem 0 2rem 0;
+}
+.content .col{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  font-size: 1.3rem;
+}
+.btn{
+  font-size: 1.3rem;
+}
+/* group chat */
+
+
+/* the highlights */
+
+.highlights-bar {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.highlight-text {
+    display: inline-block;
+    animation: scrollText 60s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes scrollText {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.highlight-text p {
+    display: inline-block;
+    margin-right: 20px; /* Adjust as needed */
+    opacity: 1; /* Ensure the text is fully visible */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.contain{
+    background-color: bisque;
+}
+
+/* the highlights */
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --main-bg: #000000;
+    --main-color: #FFD700;
+  }
+  ul {
+    list-style-type: none;
+  }
+  
+  /* body{
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+  } */
+  html{
+    font-size: 62.5%;
+  }
+  p{
+    font-size: 1.4rem;
+  }
+  .row{
+    margin: 0;
+  
+  }
+  .main_menu{
+    background-color: var(--main-bg);
+  
+  }
+  .navbar{
+    color: aliceblue;
+    background-color: var(--main-bg);
+    padding: 1rem 0;
+  }
+  .navbar li {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  .nav_logo{
+    font-family: "Julius Sans One";
+    font-weight: bolder;
+    color: #FFD700;
+    font-size: 2.4rem;
+  }
+  .navbar a:hover{
+    color: var(--main-color);
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 200, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler {
+    border: 1px solid #FFD700;
+  } 
+  
+  /* group chat */
+  .chat_cards li{
+  margin: 2rem 0 2rem 0;
+  
+  }
+  .card{
+    border-radius: 10px;
+  }
+  .chatrod{
+    width: 45%;
+  }
+  
+  /* group chat */
+  
+  
+  .row-1{
+      background-color: rgb(208, 182, 143);
+      height: 100px;
+  }
+  
+  .logo{
+      height: 60px;
+  }
+  
+  .highlights-bar {
+      overflow: hidden;
+      white-space: nowrap;
+  }
+  
+  .highlight-text {
+      display: inline-block;
+      animation: scrollText 60s linear infinite; /* Adjust duration as needed */
+  }
+  
+  @keyframes scrollText {
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+  
+  .highlight-text p {
+      display: inline-block;
+      margin-right: 20px; /* Adjust as needed */
+      opacity: 1; /* Ensure the text is fully visible */
+      white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .contain{
+      background-color: bisque;
+  }
+  
+  footer{
+      width: 100%;
+  
+  }
+  
+  footer {
+    font-size: 1.5rem;
+      padding: -8rem 0;
+    }
+    
+    .footer-section {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .footer-section h6 {
+      
+      margin-bottom: 1rem;
+      color: #7c4dff;
+    }
+    
+    .footer-section a {
+      color: #ffffff;
+      text-decoration: none !important;
+    }
+    
+    .footer-section a:hover {
+      color: #7c4dff;
+    }
+    
+    hr {
+      margin-bottom: 1rem;
+      border: 1px solid #7c4dff;
+    }
+    
+    .social-media a {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-right: 1rem;
+    }
+    
+    .copy-right {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+    
+    .copy-right a {
+      color: #ffffff;
+    }
+    
+  
+  
+  
+/* .icns{
+    color: #fff;
+    margin: 2rem 2rem 0 2rem;
+}
+ */
+/* handlind media queries */
+@media screen and (max-width: 880px) {
+  .chatrod{
+    width: 70%;
+  }
+}

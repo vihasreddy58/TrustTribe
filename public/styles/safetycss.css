@@ -1,0 +1,94 @@
+/* Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+
+  color: black;
+}
+
+/* Panels Container Styles */
+.panels {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between panels */
+  gap: 20px; /* 20px gap between panels */
+  font-family: Arial, sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Left Panel Styles */
+.left-panel {
+  width: 20%; /* Adjust width as needed */
+  color: black;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  height: 100%; /* Fill available height */
+  overflow: auto; /* Enable scrolling if content exceeds panel height */
+}
+
+.left-panel .topics {
+  list-style: none;
+  padding: 0;
+}
+
+.left-panel .topics li {
+  margin-bottom: 10px; /* Adjust margin between list items */
+}
+
+.left-panel .topics li a {
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+  background-color: #f9f9f9;
+}
+
+/* Right Panel Styles */
+.right-panel {
+  width: 80%; /* Adjust width as needed */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  height: 100%; /* Fill available height */
+  overflow: auto; /* Enable scrolling if content exceeds panel height */
+}
+
+.right-panel p,
+.right-panel ul {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.right-panel h2 {
+  font-weight: 600;
+  color: rgb(82, 154, 183);
+  text-decoration: underline;
+}
+
+.right-panel a {
+  transition: 0.4s;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.right-panel a:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Media Query for Responsive Layout */
+@media screen and (max-width: 880px) {
+  .panels {
+    flex-direction: column; /* Stack panels vertically on smaller screens */
+    gap: 10px; /* Reduce gap between panels for smaller screens */
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

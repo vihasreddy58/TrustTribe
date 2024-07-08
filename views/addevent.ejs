@@ -1,0 +1,61 @@
+<%- include("partials/header") -%>
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <style>
+        .container{
+            font-size: 1.5rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    </style>
+    </head>
+
+    <body>
+        <%- include("partials/navbar") -%>
+            <div class="container" id="main-container">
+                <div class="container mt-5" id="form-container">
+                    <h1 class="text-center">ADD EVENT</h1>
+                    <form class="mt-4" action="/addevent" method="post">
+                        <div class="form-group">
+                            <label for="fname" class="text-primary">Full Name</label>
+                            <input type="text" class="form-control" id="fname" name="fname"
+                                placeholder="Enter your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventname" class="text-primary">Eventname*</label>
+                            <input type="text" class="form-control" id="eventname" name="eventname"
+                                placeholder="Enter your Eventname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description" class="text-primary">Description*</label>
+                            <textarea class="form-control" id="description" name="description" rows="3"
+                                placeholder="Add Description of your event" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="location" class="text-primary">Location*</label>
+                            <input type="text" class="form-control" id="location" name="location"
+                                placeholder="Enter event Location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact" class="text-primary">Contact*</label>
+                            <input type="text" class="form-control" id="contact" name="contact"
+                                placeholder="Enter Contact Details" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventdate" class="text-primary">Eventdate*</label>
+                            <input type="date" class="form-control" id="eventdate" name="eventdate"
+                                placeholder="Enter Event Date" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <%- include("partials/footer") -%>
+    </body>
+
+    </html>
+    </body>
+
+    </html>
